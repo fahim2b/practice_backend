@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 
 //Router
 app.use("/api/v1/product", productRoutes);
-app.use("/api/v1/cattegory", categoryRoutes);
+app.use("/api/v1/category", categoryRoutes);
 
 app.use((req, res) => {
   res.status(404).json({
